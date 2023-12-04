@@ -91,7 +91,6 @@ if __name__ == '__main__':
                         first_digt = int(char)
                         sum += 10*first_digt
                     last_digt = int(char)
-                    i += 1
                 elif char in dict_tree:
                     w2d = search_tree(line, i, line_length)
                     if w2d > 0:
@@ -99,8 +98,6 @@ if __name__ == '__main__':
                             first_digt = w2d
                             sum += 10*first_digt
                         last_digt = w2d
-                    i += 1
-                else:
-                    i += 1
+                i += 1
             sum += last_digt
     print(sum)
