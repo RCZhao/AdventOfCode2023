@@ -25,7 +25,8 @@ def hand_2_hax_and_classif(hand):
         card_count[int(h, base=16)] += 1
         hax_string += h
     j_N = card_count[0]
-    card_count = sorted(card_count[1:])[::-1]
+    # card_count = sorted(card_count[1:])[::-1]
+    card_count = sorted(card_count[1:], reverse=True)
     if j_N > 0:
         card_count[0] += j_N
     hand_type = ''
